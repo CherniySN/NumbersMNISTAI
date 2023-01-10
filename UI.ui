@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1862</width>
+    <height>837</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Автоматический расчет дохода АРД v.1.0</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="openButton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>760</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Montserrat</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: white;
+	background-color: #093c57;
+	border-radius: 9;
+	border: 1px solid #07adba;
+
+}
+
+QPushButton:hover {
+	background-color: #1388c5;
+	border: 1px solid #057a83;
+}
+
+QPushButton:pressed {
+	background-color: #154560;
+	border: 2px solid #00ccff;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-50</y>
+     <width>1891</width>
+     <height>941</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Analysis treaty of share of the partnership/Фон1.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1450</x>
+     <y>0</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>8 961 390 31 38</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1380</x>
+     <y>40</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Montserrat</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>По вопросам работы программы</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RunRe">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>760</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Montserrat</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: white;
+	background-color: #093c57;
+	border-radius: 9;
+	border: 1px solid #07adba;
+
+}
+
+QPushButton:hover {
+	background-color: #1388c5;
+	border: 1px solid #057a83;
+}
+
+QPushButton:pressed {
+	background-color: #154560;
+	border: 2px solid #00ccff;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Обработать</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="Clear">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>760</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Montserrat</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: white;
+	background-color: #093c57;
+	border-radius: 9;
+	border: 1px solid #07adba;
+
+}
+
+QPushButton:hover {
+	background-color: #1388c5;
+	border: 1px solid #057a83;
+}
+
+QPushButton:pressed {
+	background-color: #154560;
+	border: 2px solid #00ccff;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>1260</x>
+     <y>110</y>
+     <width>571</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="date_of_document">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>Дата документа:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="current_date">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>Текущая дата:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="status_document">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>Срок действия документа:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Year_of_document">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>Года за который начислялась зп:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="value_of_nouth">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>Количество месяцев:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="total_salary">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>Общая сумма дохода:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="salary">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>Доход за последние (3-6 месяцев):</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="avg_salary">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>Среднемесячный доход:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="INN_of_comp">
+      <property name="font">
+       <font>
+        <family>Montserrat</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{color: white}</string>
+      </property>
+      <property name="text">
+       <string>ИНН организации:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="Chek_INN">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>760</y>
+     <width>271</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Montserrat</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: white;
+	background-color: #093c57;
+	border-radius: 9;
+	border: 1px solid #07adba;
+
+}
+
+QPushButton:hover {
+	background-color: #1388c5;
+	border: 1px solid #057a83;
+}
+
+QPushButton:pressed {
+	background-color: #154560;
+	border: 2px solid #00ccff;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Проверка работодателя</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>1161</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGraphicsView {
+	
+	background-color: #FFFFFF;
+	border-radius: 9;
+	border: 2px solid #07adba;
+
+}
+</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+   </property>
+   <property name="interactive">
+    <bool>true</bool>
+   </property>
+   <property name="sceneRect">
+    <rectf>
+     <x>0.000000000000000</x>
+     <y>0.000000000000000</y>
+     <width>0.000000000000000</width>
+     <height>0.000000000000000</height>
+    </rectf>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <zorder>label_7</zorder>
+  <zorder>openButton</zorder>
+  <zorder>RunRe</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>Clear</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>Chek_INN</zorder>
+  <zorder>graphicsView</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
